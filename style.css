@@ -49,6 +49,7 @@ nav header #status {
   flex-direction: row;
   align-items: center;
   opacity: 0.4;
+  font-size: 9px;
 }
 
 #status button img {
@@ -76,7 +77,7 @@ main {
   top: 0;
   width: 100vw;
   height: 600px;
-  font-size: 14px;
+  font-size: 9px;
   font-weight: medium;
   z-index: 1;
   margin-top: 50px;
