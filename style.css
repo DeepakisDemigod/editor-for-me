@@ -1,1 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
 
+body {
+  background: rgba(1,30,58,255);
+  color: white;
+}
+
+/* nav starts */
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;  
+  background: rgba(1,30,58,255);
+}
+
+nav header  {
+  z-index: 2;
+}
+
+nav header #status {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(1,30,58,255);
+  border-bottom: 0.5px double rgba(225,225,225,0.2);
+  padding: 3px 5px;
+}
+
+#status button {
+  margin-right: 10px;
+  margin: 10px;
+  
+  /* button style */
+  background: none;
+  color: white;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  opacity: 0.4;
+}
+
+#status button img {
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+}
+
+/* nav ends */
+
+/* main starts */
+
+main {
+  background: rgba(1,30,58,255);
+}
+
+#editor-html,
+#editor-css,
+#editor-js,
+#output {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100vw;
+  height: 600px;
+  font-size: 14px;
+  font-weight: medium;
+  z-index: 1;
+  margin-top: 50px;
+  display: block;
+}
+
+#output {
+  width: 100vw;
+  height: 600px;
+  background: #fff;
+  margin-top: 50px;
+  font-size: 5px;
+  font-family: Arial, sans-serif;
+}
+
+#run {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: royalblue;
+  color: white;
+  padding: 9px 14px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  transition: 0.4s;
+  font-size: 20px;
+  letter-spacing: 0.9px;
+  font-family: monospace;
+  user-select: none;
+  z-index: 2;
+  margin: 0 10px 10px 0;
+}
+
+
+#run:active {
+  transition: 0.4s;
+  transform: scale(1.09);
+}
