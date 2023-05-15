@@ -7,14 +7,11 @@ editor_html.setValue(`<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calculator</title>
+  <title>app</title>
 </head>
 <body>
   
-  
-  <div class="app">
-    My App
-  </div>
+  <!-- your code here -->
   
   <script src="main.js"></script>
 </body>
@@ -48,7 +45,7 @@ editor_css.setValue(`
 let editor_js = ace.edit("editor-js");
 editor_js.setTheme("ace/theme/cobalt");
 editor_js.session.setMode("ace/mode/javascript");
-editor_js.setValue(`prompt('hello user')
+editor_js.setValue(`console.log('hello world')
 
 
 
