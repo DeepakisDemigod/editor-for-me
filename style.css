@@ -86,7 +86,7 @@ main {
 
 #output {
   width: 100vw;
-  height: 600px;
+  height: 100vh;
   background: #fff;
   margin-top: 50px;
   font-size: 8px;
