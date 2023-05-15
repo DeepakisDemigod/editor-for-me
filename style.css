@@ -53,8 +53,8 @@ nav header #status {
 }
 
 #status button img {
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   margin-right: 3px;
 }
 
@@ -76,7 +76,7 @@ main {
   bottom: 0;
   top: 0;
   width: 100vw;
-  height: 600px;
+  height: 100vh;
   font-size: 9px;
   font-weight: medium;
   z-index: 1;
