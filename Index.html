@@ -1,1 +1,61 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ace.c9.io</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <nav>
+      <header>
+        <div id="status">
+          <button id="html">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+            <span>index.html</span>
+          </button>
+          <button id="css">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+            <span>style.css</span>
+          </button>
+          <button id="js">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+            <span>main.js</span>
+          </button>
+          <button id="web">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" />
+            <span>web</span>
+          </button>
+        </div>
+      </header>
+    </nav>
+    <main>
+      
+      <div id="editor-container-html">
+        <div id="editor-html"></div>
+      </div>
+      <div id="editor-container-css">
+        <div id="editor-css"></div>
+      </div>
+      <div id="editor-container-js">
+        <div id="editor-js"></div>
+      </div>
+      <div id="editor-result">
+        <iframe id="output" frameborder="0"></iframe>
+      </div>
+      
+      <button id="run">Run</button>
+      
+    </main>
+  </div>
+  
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/ace.js"></script>
+  <script src="js/editor.js"></script>
+  <script src="js/tab.js"></script>
+</body>
+</html>
