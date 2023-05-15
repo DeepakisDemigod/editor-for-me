@@ -86,3 +86,19 @@ runButton.addEventListener('click', () => {
 })
 
 run()
+
+setTimeout(() => {
+  setInterval(() => {
+    let htmlcode = editor_html.getValue()
+    let csscode = editor_css.getValue();
+    let jscode = editor_js.getValue();
+    localStorage.setItem('html', htmlcode);
+    localStorage.setItem('css', csscode);
+    localStorage.setItem('js', jscode);
+  }, 1000);
+}, 100)
+
+
+editor_html.setValue(localStorage.getItem('html') || '')
+editor_css.setValue(localStorage.getItem('css') || '')
+editor_js.setValue(localStorage.getItem('js') || '')
