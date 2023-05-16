@@ -85,7 +85,6 @@ runButton.addEventListener('click', () => {
   run()
 })
 
-run()
 
 setTimeout(() => {
   setInterval(() => {
@@ -102,3 +101,5 @@ setTimeout(() => {
 editor_html.setValue(localStorage.getItem('html') || '')
 editor_css.setValue(localStorage.getItem('css') || '')
 editor_js.setValue(localStorage.getItem('js') || '')
+
+run()
